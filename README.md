@@ -1,25 +1,28 @@
 # Travel Behavior & User Analytics (HKA Project)
-This project was a collaborative effort by a team of 4 students for the Data Analysis and Business Intelligence module at Karlsruhe University of Applied Sciences (HKA). We acted as data science consultants for a US-based travel platform to optimize their marketing and platform strategy.
+> A Data Science Consultancy Case for US-based Platform Optimization
 
-## What I contributed:
-In this project, we analyzed user profiles, clickstream data, and country statistics to help the platform understand their audience. My focus was on:
-* **Data Preparation:** Cleaning and merging relational datasets using `pandas` and `numpy`.
-* **Statistical Analysis:** I used `scipy` to test hypotheses using Chi-Square tests, ANOVA, and T-Tests to find significant correlations in user behavior.
-* **Interactive Visualization:** Creating dynamic plots with `plotly.express`and building a prototypical Power BI Dashboard for marketing stakeholders
+## Projektüberblick
+Im Rahmen einer Beratungssimulation für eine US-Reisebuchungsplattform analysiert dieses Projekt das Nutzerverhalten, um Marketingstrategien und die Produktplatzierung zu optimieren. Der Fokus liegt auf der Transformation von komplexen Clickstream-Daten in geschäftsrelevante Insights.
+
+## Kernfunktionen
+* **Multi-Relational Data Engineering:**
+  * Integration und Bereinigung von Teildatensätzen: Nutzerstammdaten, Clickstream-Logs, geografische Infos und Bevölkerungsstatistiken.
+  * Preprocessing zur Vorbereitung statistischer Analysen für verschiedene Stakeholder-Gruppen.
+* **Statistische Hypothesenprüfung:**
+  * **Korrelationsanalysen:** Untersuchung der Zusammenhänge zwischen Nutzerdemografie (Alter/Sprache) und den Eigenschaften der Zielländer.  
+  ![Analyse Sprache vs. Zielland](Bilder/Frage1.png)
+  *Beispiel: Analyse des Zusammenhangs zwischen Usersprache und Zielsprache.*
+  * **Signifikanztests:** Vergleich von Buchungstrends zwischen den Zeiträumen 2010/2011 und 2014/2015 zur Identifikation von Marktveränderungen.
+  * **Verhaltensanalyse:** Analyse von Unterschieden im Surfverhalten basierend auf Geschlecht, Alter und verwendetem IT-Equipment.
+* **Business Intelligence & Storytelling:**
+  * Erstellung von **Data Stories** für das Marketing, um die Durchdringung neuer Geschäftsfelder zu unterstützen.
+  * Entwicklung eines interaktiven **Power BI Dashboards** zur Visualisierung von Kennzahlen und Handlungsempfehlungen für das Management.
 
 ## Tech Stack
-* **Analysis:** Python (Jupyter Notebooks)
-* **Libraries:** `pandas`, `numpy`, `plotly`, `scipy.stats`
-* **BI-Tool:** Microsoft Power BI (.pbix included)
+* **Sprache:** Python
+* **Statistik & Analyse:** `pandas`, `numpy`, `plotly.express`, `scipy.stats` (Chi-Square, ANOVA, T-Tests)
+* **BI-Tool:** Microsoft Power BI (.pbix Datei enthalten)
 
-## Dataset
-The analysis is based on an anonymized academic dataset provided by the Karlsruhe University of Applied Sciences (HKA) for this project. It simulates real-world data from a US travel platform and includes:
-* **User Data:** Information on account creation, age, gender, and signup methods.
-* **Clickstream Logs:** Web session data including user actions, device types, and time spent on site.
-* **Geographic & Demographic Info:** Statistics about the destination countries
-
-## What the project was about
-The main goal was to move from raw numbers to actual insights. We used the data to answer specific questions for the business, for example:
-* **User Behavior:** How surfing habits differ across various age groups.
-* **Optimization:** Where to prioritize development for the booking portal based on actual user patterns.
-* **Marketing:** Creating data-driven stories to help the marketing department understand their target groups better.
+## Projektherkunft
+Dieses Projekt wurde im Rahmen des Moduls **„Datenanalyse und Business Intelligence 1“** an der **Hochschule Karlsruhe (HKA)** im WS 25/26 als Gruppenarbeit entwickelt.  
+**Datenquelle:** Anonymisierter akademischer Datensatz einer US-Reiseplattform (bereitgestellt durch die HKA).
